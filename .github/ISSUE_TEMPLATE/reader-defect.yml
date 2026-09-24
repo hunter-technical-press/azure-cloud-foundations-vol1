@@ -1,7 +1,6 @@
 name: Reader defect / errata report
 description: Report a problem with the book, lab, or companion files
 title: "[Reader report] "
-labels: [reader-report]
 body:
   - type: markdown
     attributes:
