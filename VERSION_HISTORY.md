@@ -1,4 +1,5 @@
 # Version history
 
-- **v1.0.0** - planned first public companion release after G6-WP10 acceptance.
-- **RC2** - release candidate after brand/title migration; technical baseline unchanged.
+- **Companion v1.0.0** - live initial public companion release for book edition 1.0.
+- **Book edition 1.0** - current release candidate; commercial publication pending.
+- **RC2** - superseded release candidate after brand/title migration; technical baseline unchanged.
