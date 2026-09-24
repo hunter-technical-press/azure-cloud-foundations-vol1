@@ -1,0 +1,52 @@
+name: Reader defect / errata report
+description: Report a problem with the book, lab, or companion files
+title: "[Reader report] "
+labels: [reader-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not include passwords, authentication codes, tokens, tenant/subscription identifiers, billing details, public IP addresses, or other sensitive information.**
+  - type: input
+    id: version
+    attributes:
+      label: Edition / version
+      placeholder: "1.0 / companion v1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: [Paperback, Kindle, Companion pack, Other]
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Chapter / lab / step
+      placeholder: "Chapter 07 / AZ-FND-007 / Step 12"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+    validations:
+      required: true
+  - type: checkboxes
+    id: risk
+    attributes:
+      label: Risk indicators
+      options:
+        - label: Unexpected cost
+        - label: Lockout / access risk
+        - label: Data-loss risk
+        - label: Privacy or security risk
+        - label: Impossible lab state
